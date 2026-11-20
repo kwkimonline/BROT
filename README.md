@@ -37,10 +37,6 @@ pip install torch==2.7.1 numpy==2.2.6 scipy==1.15.3 pot==0.9.6.post1
 pip install -e .
 ```
 
-The example in Section 5.1 was run on CPU (Intel Xeon Gold 6226R) with 3 threads (`--threads 3`).
-With the seeds fixed, the results are deterministic for a given machine,
-but they can differ slightly across hardware, thread counts, and library versions.
-
 ## Quick start
 
 ```python
@@ -99,13 +95,9 @@ python examples/convergence.py            # quick run: n in {500, 1000, 2000}, 3
 python examples/convergence.py --paper    # the full setting of the paper: 7 sample sizes, 10 seeds
 ```
 
-The script prints the mean estimation error $\mathbb E\|\widehat{\mathbf T}(X)-\mathbf T_0(X)\|^2$ on 2,000 held-out source points for each $n$
-and saves the per-seed errors to `convergence.csv`.
+The script prints the mean estimation error $\mathbb E\|\widehat{\mathbf T}(X)-\mathbf T_0(X)\|^2$ on 2,000 source test data for each $n$
+and saves the errors to `convergence.csv`.
 
-## Scope
-
-This repository contains the BROT estimator and the synthetic benchmarks.
-The experiments on real data (AFHQv2, single-cell perturbation, and domain adaptation) and the baseline methods are not included.
 
 ## Citation
 
