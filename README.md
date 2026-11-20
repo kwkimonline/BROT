@@ -1,6 +1,6 @@
 # BROT: Barycentric Regression for Optimal Transport
 
-Official repository for **[Deep Barycentric Regression for Optimal Transport Map Estimation and its Statistical Optimality](https://arxiv.org/abs/2609.06598)**, published in NeurIPS2026, selected as a spotlight presentation.
+Official repository for **[Deep Barycentric Regression for Optimal Transport Map Estimation and Its Statistical Optimality](https://arxiv.org/abs/2609.06598)**, published in NeurIPS 2026, selected as a spotlight presentation.
 
 BROT estimates the optimal transport (OT) map in two steps.
 It first computes the unregularized empirical OT plan between the source and target data,
@@ -110,12 +110,13 @@ The experiments on real data (AFHQv2, single-cell perturbation, and domain adapt
 ## Citation
 
 ```bibtex
-@article{kim2026brot,
-  title={Deep Barycentric Regression for Optimal Transport Map Estimation and its Statistical Optimality},
-  author={Kim, Kunwoong and Kong, Insung and Kim, Yongdai},
+@inproceedings{
+  kim2026deep,
+  title={Deep Barycentric Regression for Optimal Transport Map Estimation and Its Statistical Optimality},
+  author={Kunwoong Kim and Insung Kong and Yongdai Kim},
+  booktitle={The Fortieth Annual Conference on Neural Information Processing Systems},
   year={2026},
-  journal={arXiv preprint arXiv:2609.06598},
-  url={https://arxiv.org/abs/2609.06598}
+  url={https://openreview.net/forum?id=Y6gjRpnLxO}
 }
 ```
 
